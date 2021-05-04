@@ -1,0 +1,4 @@
+<h1>All Neighborhoods</h1>
+<%= @neighborhoods.each do |neighborhood| %>
+<h2><a href="/neighborhoods/<%= neighborhood.id %>"><%= neighborhood.name %></a></h2>
+<% end %>

@@ -1,0 +1,13 @@
+<h1>All Cities</h1>
+<%= %>
+<h2>Listings</h2>
+<%= @city.listings.each do |listing| %>
+<h3><%= listing.title %></h3>
+<ul>
+  <li><%= listing.type %></li>
+  <li><%= listing.address %></li>
+  <li><%= listing.neighborhood %></li>
+  <li><%= listing.description %></li>
+  <li>Average Rating: <%= listing.average_rating %> based on <%= listing.average_rating %></li>
+  <li>$<%= listing.price.round(2) %></li>
+</ul>

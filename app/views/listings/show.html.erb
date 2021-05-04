@@ -1,0 +1,9 @@
+<h1><%= @listing.title %></h1>
+<ul>
+  <li><%= @listing.listing_type %></li>
+  <li><%= @listing.address %></li>
+  <li><a href="/neighborhoods/<%= @listing.neighborhood.id %>"><%= @listing.neighborhood.name %></a></li>
+  <li><%= @listing.description %></li>
+  <li>Average Rating: <%= @listing.average_review_rating %> based on <%= @listing.reviews.count %> reviews</li>
+  <li>$<%= sprintf('%.2f', @listing.price) %></li>
+</ul>
